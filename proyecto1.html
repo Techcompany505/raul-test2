@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Proyecto: Cocina remodelada</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto 1 | Construcciones El Maestro</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .galeria-seccion {
+      margin-bottom: 3em;
+    }
+
+    .galeria-seccion h3 {
+      margin-bottom: 1em;
+      color: #005bff;
+      text-align: center;
+    }
+
+    .galeria-imagenes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1em;
+    }
+
+    .galeria-imagenes img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-imagenes img:hover {
+      transform: scale(1.02);
+    }
+
+    .volver {
+      text-align: center;
+      margin: 2em 0;
+    }
+
+    .volver a {
+      background-color: #005bff;
+      color: white;
+      padding: 0.8em 1.5em;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .volver a:hover {
+      background-color: #0040c1;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Remodelación de cocina</h1>
-    <p>Ubicación: León — Cliente: María Ruiz</p>
+    <h1>Proyecto 1: Remodelación de Vivienda</h1>
+    <p>Ubicación: Quito, Ecuador | Tipo: Remodelación completa</p>
   </header>
 
   <nav>
@@ -17,18 +64,46 @@
     <a href="contacto.html">Contacto</a>
   </nav>
 
-  <main class="galeria">
-    <img src="img/proyecto1-img1.jpg" alt="Antes">
-    <img src="img/proyecto1-img2.jpg" alt="Durante">
-    <img src="img/proyecto1-img3.jpg" alt="Después">
-    <video controls>
-      <source src="img/proyecto1-video.mp4" type="video/mp4">
-      Tu navegador no soporta video.
-    </video>
+  <main>
+    <section>
+      <p style="text-align:center; max-width:800px; margin:auto;">Este proyecto consistió en la remodelación completa de una vivienda familiar. Se realizaron cambios estructurales, mejoras estéticas y modernización de espacios interiores y exteriores.</p>
+    </section>
+
+    <!-- Galería ANTES -->
+    <section class="galeria-seccion">
+      <h3>Antes</h3>
+      <div class="galeria-imagenes">
+        <img src="imagenes/proyecto1-antes1.jpg" alt="Antes - Vista 1">
+        <img src="imagenes/proyecto1-antes2.jpg" alt="Antes - Vista 2">
+      </div>
+    </section>
+
+    <!-- Galería DURANTE -->
+    <section class="galeria-seccion">
+      <h3>Durante la obra</h3>
+      <div class="galeria-imagenes">
+        <img src="imagenes/proyecto1-durante1.jpg" alt="Durante - Proceso 1">
+        <img src="imagenes/proyecto1-durante2.jpg" alt="Durante - Proceso 2">
+      </div>
+    </section>
+
+    <!-- Galería DESPUÉS -->
+    <section class="galeria-seccion">
+      <h3>Después</h3>
+      <div class="galeria-imagenes">
+        <img src="imagenes/proyecto1-despues1.jpg" alt="Después - Resultado 1">
+        <img src="imagenes/proyecto1-despues2.jpg" alt="Después - Resultado 2">
+      </div>
+    </section>
+
+    <!-- Volver -->
+    <div class="volver">
+      <a href="portafolio.html">← Volver al portafolio</a>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 Construcciones El Maestro
+    &copy; 2025 Construcciones El Maestro. Todos los derechos reservados.
   </footer>
 </body>
 </html>
