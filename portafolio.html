@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyectos | Construcciones El Maestro</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .proyecto {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .proyecto img, .proyecto video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .proyecto .info {
+      padding: 10px;
+    }
+    .proyecto h3 {
+      margin: 0 0 5px;
+    }
+    .proyecto p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Construcciones El Maestro</h1>
+    <p>Proyectos realizados: antes y después</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="portafolio.html">Proyectos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Galería de proyectos</h2>
+      <p>Aquí puedes ver algunos de nuestros trabajos realizados. Observa el impacto de nuestras remodelaciones y construcciones con imágenes del antes y después, y videos cuando estén disponibles.</p>
+    </section>
+
+    <section class="galeria">
+      <!-- Proyecto 1 -->
+      <div class="proyecto">
+        <img src="imagenes/proyecto1-antes.jpg" alt="Antes del Proyecto 1">
+        <img src="imagenes/proyecto1-despues.jpg" alt="Después del Proyecto 1">
+        <div class="info">
+          <h3>Remodelación de casa</h3>
+          <p>Ubicación: Quito, Ecuador</p>
+          <p>Tipo: Remodelación integral</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 con video -->
+      <div class="proyecto">
+        <video controls>
+          <source src="videos/proyecto2.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="info">
+          <h3>Construcción de local comercial</h3>
+          <p>Ubicación: Guayaquil, Ecuador</p>
+          <p>Tipo: Construcción desde cero</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="proyecto">
+        <img src="imagenes/proyecto3-antes.jpg" alt="Antes del Proyecto 3">
+        <img src="imagenes/proyecto3-despues.jpg" alt="Después del Proyecto 3">
+        <div class="info">
+          <h3>Remodelación de cocina</h3>
+          <p>Ubicación: Cuenca, Ecuador</p>
+          <p>Tipo: Interiorismo y acabados</p>
+        </div>
+      </div>
+
+      <!-- Puedes seguir agregando más proyectos -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Construcciones El Maestro. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
