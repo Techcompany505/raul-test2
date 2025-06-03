@@ -1,43 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Proyectos | Construcciones El Maestro</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .proyecto {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fff;
-    }
-    .proyecto img, .proyecto video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .proyecto .info {
-      padding: 10px;
-    }
-    .proyecto h3 {
-      margin: 0 0 5px;
-    }
-    .proyecto p {
-      margin: 0;
-      font-size: 0.9em;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Construcciones El Maestro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Construcciones El Maestro</h1>
-    <p>Proyectos realizados: antes y después</p>
+    <p>Proyectos destacados: antes, después y proceso</p>
   </header>
 
   <nav>
@@ -48,47 +20,45 @@
 
   <main>
     <section>
-      <h2>Galería de proyectos</h2>
-      <p>Aquí puedes ver algunos de nuestros trabajos realizados. Observa el impacto de nuestras remodelaciones y construcciones con imágenes del antes y después, y videos cuando estén disponibles.</p>
+      <h2>Portafolio de Proyectos</h2>
+      <p>Haz clic en cada imagen para ver más fotos y detalles del proyecto.</p>
     </section>
 
-    <section class="galeria">
+    <section class="grid-proyectos">
       <!-- Proyecto 1 -->
       <div class="proyecto">
-        <img src="imagenes/proyecto1-antes.jpg" alt="Antes del Proyecto 1">
-        <img src="imagenes/proyecto1-despues.jpg" alt="Después del Proyecto 1">
+        <a href="proyecto1.html">
+          <img src="imagenes/proyecto1-despues.jpg" alt="Proyecto 1 terminado">
+        </a>
         <div class="info">
-          <h3>Remodelación de casa</h3>
-          <p>Ubicación: Quito, Ecuador</p>
-          <p>Tipo: Remodelación integral</p>
+          <h3>Quito, Ecuador</h3>
+          <p>Remodelación de vivienda completa</p>
         </div>
       </div>
 
-      <!-- Proyecto 2 con video -->
+      <!-- Proyecto 2 -->
       <div class="proyecto">
-        <video controls>
-          <source src="videos/proyecto2.mp4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video.
-        </video>
+        <a href="proyecto2.html">
+          <img src="imagenes/proyecto2-despues.jpg" alt="Proyecto 2 terminado">
+        </a>
         <div class="info">
-          <h3>Construcción de local comercial</h3>
-          <p>Ubicación: Guayaquil, Ecuador</p>
-          <p>Tipo: Construcción desde cero</p>
+          <h3>Guayaquil, Ecuador</h3>
+          <p>Construcción de local comercial</p>
         </div>
       </div>
 
       <!-- Proyecto 3 -->
       <div class="proyecto">
-        <img src="imagenes/proyecto3-antes.jpg" alt="Antes del Proyecto 3">
-        <img src="imagenes/proyecto3-despues.jpg" alt="Después del Proyecto 3">
+        <a href="proyecto3.html">
+          <img src="imagenes/proyecto3-despues.jpg" alt="Proyecto 3 terminado">
+        </a>
         <div class="info">
-          <h3>Remodelación de cocina</h3>
-          <p>Ubicación: Cuenca, Ecuador</p>
-          <p>Tipo: Interiorismo y acabados</p>
+          <h3>Cuenca, Ecuador</h3>
+          <p>Renovación de cocina interior</p>
         </div>
       </div>
 
-      <!-- Puedes seguir agregando más proyectos -->
+      <!-- Puedes seguir agregando más -->
     </section>
   </main>
 
