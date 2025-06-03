@@ -1,0 +1,135 @@
+/* Tipografía y base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  color: #333333;
+}
+
+/* Encabezado */
+header {
+  background: #002b5c;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+/* Navegación */
+nav {
+  background: #005bff;
+  padding: 0.8em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Secciones */
+section {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #002b5c;
+  color: white;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Galería de proyectos */
+.grid-proyectos, .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 2em;
+}
+
+.proyecto {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.proyecto img, .proyecto video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.proyecto .info {
+  padding: 1em;
+  text-align: center;
+}
+
+.proyecto h3 {
+  margin: 0.5em 0 0.2em;
+  color: #005bff;
+}
+
+/* CENTRAR CONTENIDO DE LA PÁGINA DE CONTACTO */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.contacto form {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contacto input,
+.contacto textarea,
+.contacto button {
+  width: 100%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.contacto button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+  background-color: #e65c00;
+}
