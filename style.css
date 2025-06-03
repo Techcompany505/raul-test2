@@ -133,3 +133,59 @@ img {
 .contacto button:hover {
   background-color: #e65c00;
 }
+
+/* -------------------------------
+   DISEÑO RESPONSIVE PARA MÓVILES
+---------------------------------- */
+@media (max-width: 768px) {
+  nav {
+    padding: 1em 0.5em;
+    font-size: 0.95em;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5em;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 1.5em 1em;
+  }
+
+  .proyecto .info {
+    padding: 0.8em;
+  }
+
+  .contacto form {
+    padding: 1.2em;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .proyecto h3 {
+    font-size: 1.1em;
+  }
+
+  .contacto input,
+  .contacto textarea,
+  .contacto button {
+    font-size: 0.95em;
+  }
+}
