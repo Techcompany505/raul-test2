@@ -99,6 +99,37 @@ img {
   font-size: 0.95em;
 }
 
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info-contacto,
+.formulario-contacto {
+  flex: 1;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+
 /* CENTRAR CONTENIDO DE LA PÁGINA DE CONTACTO */
 .contacto {
   display: flex;
