@@ -1,45 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Contacto - El Maestro</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Contáctanos</h1>
-    <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-  </header>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="portafolio.html">Proyectos</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-  <section>
-    <h2>Información de contacto</h2>
-    <p><strong>Teléfono:</strong> +51 999 999 999</p>
-    <p><strong>Email:</strong> raultest@construcciones.com</p>
-    <p><strong>Ubicación:</strong> Miami, United State</p>
+.info-contacto,
+.formulario-contacto {
+  flex: 1;
+}
 
-    <h2>Formulario de contacto</h2>
-    <form action="https://formspree.io/f/tu-id" method="POST">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" name="nombre" required><br><br>
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
 
-      <label for="email">Email:</label><br>
-      <input type="email" name="_replyto" required><br><br>
-
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea name="mensaje" rows="5" required></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 Construcciones El Maestro
-  </footer>
-</body>
-</html>
-
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
