@@ -99,53 +99,6 @@ img {
   font-size: 0.95em;
 }
 
-/* Centrar todo el contenido del body */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Limitar el ancho principal */
-main {
-  max-width: 800px;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Centrar el encabezado */
-header {
-  padding: 20px;
-}
-
-/* Navegación centrada */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-/* Centrar las imágenes dentro de secciones */
-section img {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Pie de página */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f2f2f2;
-  width: 100%;
-  margin-top: 40px;
-}
-
-
 /* CENTRAR CONTENIDO DE LA PÁGINA DE CONTACTO */
 .contacto {
   display: flex;
