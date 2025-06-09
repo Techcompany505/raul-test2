@@ -1,29 +1,24 @@
-.contacto-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
+<section class="contacto-container">
+  <div class="info-contacto">
+    <h2>Información de contacto</h2>
+    <p><strong>Teléfono:</strong> +51 999 999 999</p>
+    <p><strong>Email:</strong> raultest@construcciones.com</p>
+    <p><strong>Ubicación:</strong> Miami, United State</p>
+  </div>
 
-.info-contacto,
-.formulario-contacto {
-  flex: 1;
-}
+  <div class="formulario-contacto">
+    <h2>Formulario de contacto</h2>
+    <form action="https://formspree.io/f/tu-id" method="POST">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" name="nombre" required><br><br>
 
-.formulario-contacto form {
-  display: flex;
-  flex-direction: column;
-}
+      <label for="email">Email:</label><br>
+      <input type="email" name="_replyto" required><br><br>
 
-.formulario-contacto input,
-.formulario-contacto textarea,
-.formulario-contacto button {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea name="mensaje" rows="5" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
